@@ -29,7 +29,7 @@ export const Search: FC<SearchProps> = () => {
 	}, 300)
 
 	return (
-		<form className='mt-5'>
+		<form className='mt-5' onSubmit={e => e.preventDefault()}>
 			<label
 				htmlFor='search'
 				className='mb-2 text-sm font-medium text-gray-900 sr-only'
