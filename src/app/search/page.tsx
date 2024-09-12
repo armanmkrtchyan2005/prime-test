@@ -1,6 +1,17 @@
 import { getPosts } from '@/services/get-posts'
+import { Metadata } from 'next'
 import { FilteredPosts } from './filtered-posts'
 import { Search } from './search'
+
+export const metadata: Metadata = {
+	title: 'Posts',
+	description: 'Posts',
+	openGraph: {
+		type: 'website',
+		title: 'Posts',
+		description: 'posts',
+	},
+}
 
 export default async function SearchPage() {
 	const posts = await getPosts()

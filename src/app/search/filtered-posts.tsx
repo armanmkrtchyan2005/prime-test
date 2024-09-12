@@ -27,16 +27,16 @@ export const FilteredPosts: FC<FilteredPostsProps> = ({ posts }) => {
 	)
 
 	useEffect(() => {
-		console.log(query)
-
 		setSearchedPosts(searchFromPosts(posts, query))
 	}, [posts, query])
 
 	return (
 		<div className='mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-			{searchedPosts.map(post => (
-				<PostItem key={post.id} {...post} />
-			))}
+			{searchedPosts.length ? (
+				searchedPosts.map(post => <PostItem key={post.id} {...post} />)
+			) : (
+				<h2>Response for {query} not founded</h2>
+			)}
 		</div>
 	)
 }

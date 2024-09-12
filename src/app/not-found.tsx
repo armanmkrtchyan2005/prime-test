@@ -16,9 +16,9 @@ export default function NotFound() {
 						Sorry, we can&apos;t find that page. You&apos;ll find lots to
 						explore on the home page.
 					</p>
-					<Button>
-						<Link href={'/'}>Go to HomePage</Link>
-					</Button>
+					<Link href={'/'}>
+						<Button>Go to Home Page</Button>
+					</Link>
 				</div>
 			</div>
 		</main>

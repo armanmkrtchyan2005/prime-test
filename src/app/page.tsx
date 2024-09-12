@@ -1,5 +1,16 @@
 import { PostItem } from '@/components/posts/post-item'
 import { getPosts } from '@/services/get-posts'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Posts',
+	description: 'Posts',
+	openGraph: {
+		type: 'website',
+		title: 'Posts',
+		description: 'posts',
+	},
+}
 
 export default async function HomePage() {
 	const posts = await getPosts()
