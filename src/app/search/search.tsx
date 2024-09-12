@@ -2,7 +2,8 @@
 
 import { TextField } from '@/components/ui/text-field'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import { ChangeEventHandler, FC } from 'react'
+import type { FC } from 'react'
+import { ChangeEventHandler } from 'react'
 import { IoIosSearch } from 'react-icons/io'
 import { useDebouncedCallback } from 'use-debounce'
 

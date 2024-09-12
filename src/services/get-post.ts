@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation'
-import { IPost } from './types'
+import type { IPost } from './types'
 
 export const getPost = async (id: number) => {
 	const res = await fetch(
 		`${process.env.NEXT_PUBLIC_API_BASE_URL}/posts/${id}`,
 		{
-			next: { revalidate: 60 },
+			next: { revalidate: 3600, tags: ['post'] },
 		}
 	)
 

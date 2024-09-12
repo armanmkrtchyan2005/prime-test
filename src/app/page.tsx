@@ -1,6 +1,6 @@
 import { PostItem } from '@/components/posts/post-item'
 import { getPosts } from '@/services/get-posts'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Posts',

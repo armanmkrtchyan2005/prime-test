@@ -1,5 +1,5 @@
 import { getPosts } from '@/services/get-posts'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { FilteredPosts } from './filtered-posts'
 import { Search } from './search'
 

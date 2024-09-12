@@ -1,6 +1,6 @@
-import { IPost } from '@/services/types'
+import type { IPost } from '@/services/types'
 import Link from 'next/link'
-import { FC } from 'react'
+import type { FC } from 'react'
 import { Button } from '../ui/button'
 
 export const PostItem: FC<IPost> = ({ id, body, title }) => {

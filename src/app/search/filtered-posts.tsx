@@ -1,9 +1,10 @@
 'use client'
 
 import { PostItem } from '@/components/posts/post-item'
-import { IPost } from '@/services/types'
+import type { IPost } from '@/services/types'
 import { useSearchParams } from 'next/navigation'
-import { FC, useEffect, useMemo, useState } from 'react'
+import type { FC } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 function searchFromPosts(posts: IPost[], query: string | null) {
 	return posts.filter(
